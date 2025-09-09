@@ -1,0 +1,10 @@
+services:
+  do:
+    image: postgres:latest
+    ports:
+      - "5432:5432"
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: whatthehelly!
+      POSTGRES_DB: tasks_db  # <-- A new, dedicated database for your app
